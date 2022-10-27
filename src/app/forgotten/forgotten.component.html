@@ -1,0 +1,31 @@
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<div class="login">
+
+				<form #f="ngForm">
+					<div class="login_box">
+						<div class="login__field">
+							<input type="text" id="user" name="username" class="login__input" placeholder="Nome utente" ngModel>
+						</div>
+						<div class="login__field">
+							<input type="password" id="pass" name="password" class="login__input" placeholder="Password" ngModel>
+						</div>
+            			<div class="login__field">
+							<input type="password" id="control" name="control" class="login__input" placeholder="Ripeti Password" ngModel>
+						</div>
+					</div> 
+					<button type="submit" (click)="reset(f)" class="login__submit">
+						<p class="text-center">Cambia password</p>
+					</button>				
+				</form>
+				<br>
+				<p class="error">{{err}}</p>
+				<br>
+				<button type="button" [routerLink]="['/login']" class="button backbtn">
+					<p class="text-center"> Indietro </p>
+				</button>	
+				<div class="social-login"></div>
+			</div>
+		</div>	
+	</div>

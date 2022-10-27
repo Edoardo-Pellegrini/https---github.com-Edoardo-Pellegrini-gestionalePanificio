@@ -1,0 +1,54 @@
+.pop{
+    width: 30%;
+    position: absolute;
+    right: 55%;
+    height: 40vh;
+    border-radius: 15px;
+    text-align: center;
+    color: aliceblue;
+    
+    margin-top: 10rem;
+    text-shadow: 2px 2px 2px black;
+    font-size: 2rem;
+    
+}
+.pop h2{
+    margin-bottom: 8rem;
+    padding: 2rem;
+    
+}
+.pop button{
+    
+    border-radius: 15px;
+    text-align: center;
+    color: aliceblue;
+    border: aliceblue solid 2px;
+    background-color: transparent;
+    padding: 1rem;
+}
+#sfondo{
+    background-image: url(../../assets/BackGroundLogin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.pop input{
+    border-radius: 15px;
+    text-align: center;
+    color: aliceblue;
+    border: aliceblue solid 2px;
+    background-color: transparent;
+    padding: 1rem;
+    margin-right: 20rem;
+}
+.pop select{
+    margin-right: 20rem;
+}
+#a{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+

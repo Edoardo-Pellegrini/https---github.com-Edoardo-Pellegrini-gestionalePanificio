@@ -1,0 +1,53 @@
+<div  class=" background">
+  <div id="ciao">
+
+    <div class="col-md-10">
+      <table class="fl-table">
+        <tr>
+          <th>
+            Name
+          </th>
+          <th>
+            Type
+          </th>
+          <th>
+            Nr seats
+          </th>
+          <th>
+            Price
+          </th>
+          <th>
+            Buy
+          </th>
+          <th>
+            Rent
+          </th>
+        </tr>
+        <!--  <ng-container *ngFor="let x of boats">
+          <tr *ngIf="x.available">  -->
+        <tr *ngFor="let x of boats ">
+          <td>
+            {{x.name}}
+          </td>
+          <td>
+            {{x.type}}
+          </td>
+          <td>
+            {{x.n_seats}}
+          </td>
+          <td>
+            {{x.price}} 
+          </td>
+          <td>
+            <button (click)="gocheckout(x)" [disabled]="!x.available">{{x.available ? 'BUY' : 'SOLD OUT'}}</button>   <!--disable-->
+          </td>
+          <td>  <!-- TODO microservice, always rentable, just show available dates -->
+            <button  (click)="goRental(x)" [disabled]="!x.available">{{x.available ? 'RENT' : 'SOLD OUT'}}</button>  
+          </td>
+        </tr>
+      <!--</ng-container>-->
+      </table>  
+    </div>
+  
+    </div>
+</div>

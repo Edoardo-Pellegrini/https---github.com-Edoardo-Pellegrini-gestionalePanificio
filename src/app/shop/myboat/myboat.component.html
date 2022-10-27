@@ -1,0 +1,115 @@
+<div id="sfondo">
+  <h1>Your Boats, {{user.username}}</h1>
+  <div class="login-box" *ngIf="insert == true">
+    <form #f="ngForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="name">Name</label>
+        <input ngModel name="name" placeholder="nome imbarcazione" />
+      </div>
+      <div>
+        <label for="type">Type</label>
+        <input ngModel name="type" placeholder="tipologia imbarcazione" />
+      </div>
+      <div>
+        <label for="n_seats">Number seats</label>
+        <input ngModel name="n_seats" placeholder="numero posti" type="number" />
+      </div>
+      <div>
+        <label for="price">price</label>
+        <input ngModel name="price" placeholder="prezzo" />
+      </div>
+
+      <button>Insert</button>
+    </form>
+  </div>
+  <div *ngIf="tabella == true">
+    <table class="tg">
+      <thead>
+        <tr>
+          <th class="tg-0pky">Company</th>
+          <th class="tg-0lax">Name</th>
+          <th class="tg-0lax">Type</th>
+          <th class="tg-0lax">Nr.seats</th>
+          <th class="tg-0lax">Price</th>
+          <th class="tg-0lax">Available</th>
+          <th class="tg-0lax" colspan="2">option</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of boats">
+          <td class="tg-hmp3">{{ item.user.username }}</td>
+          <td class="tg-hmp3">{{ item.name }}</td>
+          <td class="tg-hmp3">{{ item.type }}</td>
+          <td class="tg-hmp3">{{ item.n_seats }}</td>
+          <td class="tg-hmp3">{{ item.price }}</td>
+          <td class="tg-hmp3" *ngIf="item.available==true">YES</td>
+          <td class="tg-hmp3" *ngIf="item.available==false">SOLD OUT</td>
+          <td class="tg-hmp3">
+            <button (click)="showModal(item,item.n_seats)">Edit</button>
+          </td>
+          <td class="tg-hmp3">
+            <button (click)="deleteBoat(item.id)">X</button>
+          </td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="show == true" id="edit">
+    <form [formGroup]="formG" (ngSubmit)="costruzioneOggetto()">
+      <!--Chiami il formGroup-->
+      <input type="hidden" required="required" formControlName="id" />
+      <div><span>name</span>
+        <input
+          type="text"
+          required="required"
+          formControlName="name"
+        /><!--Fa referimento alla mail nel form builder-->
+        
+      </div>
+      <div><span>type</span>
+        <input type="text" required="required" formControlName="type" />
+        
+      </div>
+      <div><span>nr.seats</span>
+        <input id="nseats" type="text" required="required" formControlName="n_seats"
+        />
+        
+      </div>
+      <div><span>price</span>
+        <input type="number" required="required" formControlName="price" />
+        
+      </div>
+      <div><span>Available</span>
+        <select name="available" id="available" formControlName="available">
+          <option value="true">Available</option>
+          <option value="false">Not available</option>
+        </select>
+        
+      </div>
+      <div class="inputbox">
+        <input type="submit" value="Edit"  />
+      </div>
+    </form>
+  </div>
+  <div id="menuPallini">
+    <div class="card text-bg-dark" (click)="showInsert()">
+      <img
+        src="https://th.bing.com/th/id/R.1d32f06cbea37d5005d18b84c41ca89e?rik=QHx4x0wNF2tP%2fQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f_2cKP-URMwIE%2fS4exFIM7zsI%2fAAAAAAAAAOk%2fh9gMu4aGrz8%2fw1200-h630-p-k-no-nu%2fIMG_3441.JPG&ehk=feMMT3vLhrBUfrPpGuFE099vyOJ0QEXPx0ni9p%2fowqY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+        class="card-img"
+        alt="Edit"
+      />
+      <div class="card-img-overlay">
+        <h5 class="card-title">New Boat</h5>
+      </div>
+    </div>
+
+    <div class="card text-bg-dark" (click)="showTab()">
+      <img src="https://th.bing.com/th/id/R.8a1e39630c79da40fad4d48dfbb76830?rik=6Z%2b6s%2bVZcGcyhQ&pid=ImgRaw&r=0" class="card-img" alt="Edit" />
+      <div class="card-img-overlay">
+        <h5 class="card-title">Your Boat</h5>
+      </div>
+    </div>
+  </div>
+</div>
+

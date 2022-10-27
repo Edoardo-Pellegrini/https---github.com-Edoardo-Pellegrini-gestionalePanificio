@@ -1,0 +1,62 @@
+.sidenav {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* Created with https://www.css-gradient.com */
+    background: #33b1c9;
+    background: -webkit-linear-gradient(bottom, #33b1c9, #ffffff);
+    background: -moz-linear-gradient(bottom, #33b1c9, #ffffff);
+    background: linear-gradient(to top, #33b1c9, #ffffff);
+    overflow-x: visible;
+    transition: 0.5s;
+    padding-top: 0;
+  }
+  
+  .menubtn {
+    width: 100%;
+    text-align: center;
+    background-color: inherit;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: #334247;
+    transform: scale(107%);
+  }
+  
+  button:active {
+    background-color: #cdf1f1 !important;
+  }
+  
+  button:hover {
+    background-color: #a0d9d9;
+  }
+  
+  * {
+    font-size: 16px;
+  }
+  
+  .logo {
+    width: 100%;
+    text-align: center;
+    background-color: inherit;
+    
+    border: none;
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .logo:hover {
+    background-color: transparent;
+    transform: scale(107%);
+    cursor: pointer;
+  }
+  .logo:active {
+    background-color: transparent !important;
+  }
+  

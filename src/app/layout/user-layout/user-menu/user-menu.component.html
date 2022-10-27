@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="sidenav">
+
+            <button class="logo" [routerLink]="['/user-dashboard']" routerLinkActive="router-link-active" >  
+                <img src="../../../../assets/logo.svg" alt="Homepage" height="100"/>
+            </button>
+
+            <button class="menubtn" [routerLink]="['/user-dashboard']">
+                <a [routerLink]="['/user-dashboard']"> <i class="fas fa-home m-r-10"> </i>
+                    Dashboard </a>
+            </button>
+            <button type="button" class="menubtn" data-toggle="collapsebtn" data-target="#account"
+                (click)="accountcollapse()">
+                <i class="fas fa-user m-r-15"></i> Account
+            </button>
+            <div class="collapsebtn" id="account" *ngIf="isAccountCollapsed">
+                <button class="menubtn routebtn" [routerLink]="['/user-dashboard/profile']">
+                    <i class="fas fa-user-edit m-r-15"></i> Edit Profile           
+                </button>
+                <button class="menubtn routebtn" [routerLink]="['/user-dashboard/user-data']">
+                     <i class="fas fa-file-alt m-r-15"> </i> General Info 
+                </button>
+            </div>
+            <button type="button" class="menubtn" data-toggle="collapsebtn" data-target="#boats"
+                (click)="boatscollapse()"> <i class="fas fa-anchor m-r-15">  </i> Boats
+            </button>
+            <div class="collapsebtn" id="boats" *ngIf="isBoatCollapsed">
+            <button class="menubtn routebtn" [routerLink]="['/user-dashboard/boats']" >
+                <i class="fas fa-edit m-r-10"></i> View Boats
+            </button>
+            </div>
+            <button class="menubtn" (click)="logout()">
+                <i class="fas fa-sign-out-alt m-r-15"></i>Logout
+            </button>
+        </div>
+    </div>
+</div>

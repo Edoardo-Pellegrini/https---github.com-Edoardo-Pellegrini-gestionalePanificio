@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: sans-serif;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.screen{
+	display: flex;
+    align-items: center;
+	margin-top: 10vh;
+}
+
+.screen__content {
+    color: #000000;
+    z-index: 1;
+    position: relative;	
+    height: 100%;
+}
+
+.login {
+	background-image: url(../../assets/ccc.jpg);/*put image here*/
+    background-color: #ffffffdd;	
+    filter:drop-shadow(2px 3px 6px grey);
+	width: 320px;
+	height: 65%;
+	padding: 30px;
+}
+
+.login_box{
+	text-align: center;
+}
+
+.login__field {
+	padding: 10px 0px;	
+	position: relative;	
+    margin-bottom: 10px;
+}
+
+.login__input {
+    text-align: center;
+	border: none;
+	border-bottom: 3px solid #000000;
+	background: rgb(128, 128, 128);
+	padding: 10px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.login__submit {
+	background: rgb(11, 172, 154);
+	font-size: 16px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+    text-decoration-color: #432d01;
+    text-shadow: rgb(140, 163, 33);
+	font-weight: 700;
+	width: 100%;
+	color: #000000;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.backbtn{
+	font-size: 16px;
+	width: 50%;
+	border: 1px solid #0b0b0b;
+	text-transform: uppercase;
+}
+
+.error{
+	color: red;
+    font-size: 16px;
+}

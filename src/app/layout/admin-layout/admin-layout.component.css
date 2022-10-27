@@ -1,0 +1,11 @@
+*{
+    overflow: hidden;
+}
+
+.menu_bar{
+    width: 30vw;
+}
+
+.main_page{
+    width: 70vw;
+}

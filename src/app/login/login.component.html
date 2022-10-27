@@ -1,0 +1,43 @@
+<div class="sfondobackimg"><img class="backimg" src="../../assets/COSTA-CONCORDIA-2022-BRK-ART.jpg"></div>
+<div class="container">
+
+	<div class="screen">
+		<div class="screen__content">
+   
+			<div class="login">
+				<div class="backlogo"><img class="logo" src="../../assets/logo.svg"></div>
+				<div class="login_box">
+					<form #f="ngForm">
+						
+							<div class="login__field">
+								<input type="text" id="user" name="username" class="login__input" placeholder="Nome utente / Email" ngModel>
+							</div>
+							<div class="login__field">
+								<input type="password" id="pass" name="password" class="login__input" placeholder="Password" ngModel>
+							</div>
+						
+						<button type="submit" (click)="login(f)" class="login__submit text-center">
+							<p> Login </p>
+						</button>	
+						<br>
+						<h4><strong>OR</strong></h4>
+						<button type="submit" class="register__submit text-center" [routerLink]="['/register']">
+							<p> Register </p>
+						</button>
+						<br>			
+						<a [routerLink]="['/forgotten']"> Password dimenticata? </a>
+					</form>
+				</div> 
+
+			</div>
+		</div>
+
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+
+	</div>
+</div>

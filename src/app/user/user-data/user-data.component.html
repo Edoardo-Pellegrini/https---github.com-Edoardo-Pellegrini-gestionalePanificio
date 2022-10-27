@@ -1,0 +1,46 @@
+<div id="body">
+  <div class="container">
+
+      <div class="col-md-1"></div>
+      <div class="col-md-10" style="position: relative;">
+        <table style="z-index: 1; position: absolute; top: 0; left: 0;">
+
+          <tr>
+            <td>password</td>
+            <td>
+              <input class="data-view data-color" type="{{isReadonly ? 'password' : 'text'}}" 
+                [(ngModel)]="password" [readonly]="isReadonly" />
+            </td>
+            <td>
+              <form #userForm="ngForm" (ngSubmit)="submit()" class="collapseform" id="form" *ngIf="!isReadonly">
+                <input type="submit" class="inputbtn userbtn" value="Save" />
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>username</td>
+            <td>
+              <input class="data-view data-color" type="text"
+                name="username" id="username" value="{{ user.username }}" readonly />
+            </td>
+          </tr>
+          <tr>
+            <td>usertype</td>
+            <td>
+              <input class="data-view data-color" type="text"
+                name="usertype" id="usertype" value="{{ user.usertype }}" readonly />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <button type="button" class="menubtn inputbtn" data-toggle="collapseform" data-target="#form" 
+                (click)="modifiable()"> Change password </button>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+
+  </div>
+</div>
