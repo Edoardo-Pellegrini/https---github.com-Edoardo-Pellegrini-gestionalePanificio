@@ -8,10 +8,7 @@ import { Router } from '@angular/router';
 })
 export class UserMenuComponent implements OnInit {
 
-  isUserCollapsed = false;
-  isClientCollapsed = false;
-  isAccountCollapsed = false;
-  isBoatCollapsed = false;
+  
 
   constructor(private router: Router) {
   }
@@ -28,21 +25,5 @@ export class UserMenuComponent implements OnInit {
     }
   }
 
-  userscollapse() {
-    if (this.isUserCollapsed === false) {
-      this.isUserCollapsed = true;
-    } else { this.isUserCollapsed = false; }
-  }
-
-  boatscollapse() {
-    if (this.isBoatCollapsed === false) {
-      this.isBoatCollapsed = true;
-    } else { this.isBoatCollapsed = false; }
-  }
-
-  accountcollapse() {
-    if (this.isAccountCollapsed === false) {
-      this.isAccountCollapsed = true;
-    } else { this.isAccountCollapsed = false; }
-  }
+  
 }

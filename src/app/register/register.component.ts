@@ -1,10 +1,8 @@
-import { CompanyDTO } from "./../../dto/company";
+
 import { UserService } from "./../../service/user.service";
 import { Component, OnInit } from "@angular/core";
 import { UserDTO } from "src/dto/userdto";
-import { CompanyService } from "src/service/company.service";
-import { ProfileService } from "src/service/profileservice";
-import { ProfileDTO } from "src/dto/profiledto";
+
 import { FormGroup, FormBuilder, NgForm, Validators } from "@angular/forms";
 
 @Component({

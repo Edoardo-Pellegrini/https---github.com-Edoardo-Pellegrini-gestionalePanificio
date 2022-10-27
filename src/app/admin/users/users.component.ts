@@ -1,10 +1,8 @@
-import { ProfileDTO } from './../../../dto/profiledto';
-import { ProfileService } from './../../../service/profileservice';
-import { CompanyService } from './../../../service/company.service';
+
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/service/user.service';
 import { UserDTO } from 'src/dto/userdto';
-import { CompanyDTO } from 'src/dto/company';
+
 import { Usertype } from 'src/dto/usertype';
 
 @Component({
@@ -17,7 +15,7 @@ export class UsersComponent implements OnInit {
   users: UserDTO[];
   usertoinsert: UserDTO = new UserDTO();
 
-  constructor(private service: UserService, private cService: CompanyService, private pService: ProfileService) { }
+  constructor(private service: UserService) { }
 
   ngOnInit() {
     this.getUsers();

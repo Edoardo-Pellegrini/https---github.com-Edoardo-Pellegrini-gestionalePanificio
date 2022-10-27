@@ -3,15 +3,7 @@ import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { environment } from './../environments/environment';
 
-/**
- * Service astratto, implementa tutti i metodi CRUD inviando request al server di SpringBoot. 
- * @param port il port del backend
- * @param type la mappatura del controller di ciascuna entità.
- * 
- * @see Service
- * 
- * @author Vittorio Valent
- */
+
 export abstract class AbstractService<DTO> implements Service<DTO> {
 
     type: string;

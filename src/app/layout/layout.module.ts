@@ -9,10 +9,7 @@ import { UserLayoutComponent } from './user-layout/user-layout.component';
 import { UserMenuComponent } from './user-layout/user-menu/user-menu.component';
 import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
-import { ShopLayoutComponent } from './shop-layout/shop-layout.component';
-import { ShopMenuComponent } from './shop-layout/shop-menu/shop-menu.component';
-import { MyboatComponent } from '../shop/myboat/myboat.component';
-import { MyShopComponent } from '../shop/my-shop/my-shop.component';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 /**
@@ -26,7 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
  */
 @NgModule({
 
-  declarations: [AdminLayoutComponent, AdminMenuComponent, HeaderComponent,ShopLayoutComponent, ShopMenuComponent,UserLayoutComponent,MyShopComponent,UserMenuComponent, MyboatComponent],
+  declarations: [AdminLayoutComponent, AdminMenuComponent, HeaderComponent,UserLayoutComponent,UserMenuComponent],
 
   imports: [
     CommonModule,
