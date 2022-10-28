@@ -1,0 +1,26 @@
+.pop{
+    margin: 10rem auto;
+    text-align: center;
+    
+}
+td{
+    padding: 1rem;
+    
+}
+input{
+    font-size: 2rem;
+}
+button{
+    font-size: 2rem;
+}
+.sfondo{
+    background-image: url(https://th.bing.com/th/id/R.267c1b75e0f6740ace5ba154625cbc1a?rik=s5iOZ2CFnjz8Ng&pid=ImgRaw&r=0);
+    height: 100vh;
+}
+.logop img{
+    border-radius: 100%;
+}
+.logop{
+    text-align: center;
+    margin-top: 4rem;
+}

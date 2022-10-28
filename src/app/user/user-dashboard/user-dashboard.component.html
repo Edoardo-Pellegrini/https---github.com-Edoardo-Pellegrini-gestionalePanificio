@@ -1,1 +1,30 @@
-<p>user dashboard works</p>
+
+<div class="sfondo">
+    <div class="container-fluid">
+      <h1>Welcome {{ user.username }}</h1>
+      
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Set your order</h5>
+          <p class="card-text">Set and edit your orders.</p>
+          <a href="#" [routerLink]="['user-order']" class="btn btn-primary"
+            >Let's go</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Your profile</h5>
+          <p class="card-text">Edit your profile.</p>
+          <a href="#" [routerLink]="['user-data']"class="btn btn-primary">Let's go</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Log Out</h5>
+          <p class="card-text">Log out from your account.</p>
+          <a href="#" [routerLink]="['']"class="btn btn-primary">Let's go</a>
+        </div>
+      </div>
+    </div>
+  </div>

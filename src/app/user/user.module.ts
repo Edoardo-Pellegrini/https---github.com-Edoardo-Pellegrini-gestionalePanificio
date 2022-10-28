@@ -5,10 +5,11 @@ import { UserRoutingModule } from './user-routing.module';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 
 import { UserDataComponent } from './user-data/user-data.component';
+import { UserOrderComponent } from './order/user-order/user-order.component';
 
 
 @NgModule({
-  declarations: [UserDashboardComponent,  UserDataComponent],
+  declarations: [UserDashboardComponent,  UserDataComponent, UserOrderComponent],
   imports: [
     CommonModule,
     UserRoutingModule,

@@ -1,0 +1,31 @@
+#body{
+    width: 80%;
+    margin: 10rem auto;
+    
+}
+button{
+    margin: 3rem auto;
+
+   
+    
+}
+
+.button{
+    
+    margin: 5rem auto;
+    width: 80%;
+}
+.sfondo1{
+    
+    
+    height: 5rem;
+    
+ }
+ .sfondo{
+    
+    position: relative;
+    bottom: 0;
+    height: 5rem;
+    
+    background-image: url(https://th.bing.com/th/id/OIP.0-4hrGgeH8zkgfgwjiBdVgD6D6?pid=ImgDet&rs=1);
+ }

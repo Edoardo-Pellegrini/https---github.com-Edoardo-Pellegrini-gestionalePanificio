@@ -1,0 +1,32 @@
+<table class="table" id="insert">
+  
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Cliente</th>
+      <th scope="col">Tipo pane</th>
+      <th scope="col">Kg.</th>
+      <th scope="col">Periodicità</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of orders">
+      <th scope="row">{{order.id}}</th>
+      <td> {{order.user.username}}</td>
+      <td> {{order.pane}}</td>
+      <td> {{order.kg}}</td>
+      <td>{{order.tipoOrdine}}</td>
+
+        
+      
+      <td>
+        <button class="delete" (click)="delete(order)">Done</button>
+      </td>
+    </tr>
+   
+  </tbody>
+</table>
+<div class="sfondo">
+
+</div>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem pariatur nemo ullam, consectetur vitae reiciendis praesentium quasi quo tempora dolores dolore hic similique blanditiis. Laudantium repellendus consequuntur sit beatae quae.</p>

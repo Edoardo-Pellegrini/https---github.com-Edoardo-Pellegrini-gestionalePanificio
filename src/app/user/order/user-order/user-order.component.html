@@ -1,0 +1,38 @@
+<div id="insert">
+  <div>
+    <h4>Insert</h4>
+  </div>
+
+  <div class="input">
+    <select placeholder="tipo pane" [(ngModel)]="order.pane">
+      <option value="ROSETTA">ROSETTA</option>
+      <option value="DUNA">DUNA</option>
+      <option value="CIABATTA">CIABATTA</option>
+      <option value="PUGLIESE">PUGLIESE</option>
+    </select>
+    
+
+    <input type="number" placeholder="Kg." [(ngModel)]="order.kg" />
+
+    <select placeholder="tipo ordine" [(ngModel)]="order.tipoOrdine">
+      <option value="GIORNALIERO">GIORNALIERO</option>
+      <option value="GIORNI_ALTERNI">GIORNI ALTERNI</option>
+      <option value="LUNEDI">LUNEDI</option>
+      <option value="MARTEDI">MARTEDI</option>
+      <option value="MERCOLEDI">MERCOLEDI</option>
+      <option value="GIOVEDI">GIOVEDI</option>
+      <option value="VENERDI">VENERDI</option>
+      <option value="SABATO">SABATO</option>
+    </select>
+  </div>
+  <div>
+    <button (click)="insert(order)">Insert</button>
+
+    
+  </div>
+</div>
+<div class="sfondo">
+
+</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quos omnis sit minus id minima, quod beatae rerum nostrum itaque iusto, amet eos pariatur perspiciatis, voluptate iste eligendi eius. Saepe?</p>
+

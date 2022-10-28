@@ -14,6 +14,7 @@ import { UserRoutingModule } from './user/user-routing.module';
 
 
 import { RegisterComponent } from './register/register.component';
+import { OrdersComponent } from './admin/orders/orders.component';
 
 
 
@@ -24,6 +25,7 @@ import { RegisterComponent } from './register/register.component';
   declarations: [
     AppComponent,
     RegisterComponent,
+    OrdersComponent,
     
   ],
   imports: [

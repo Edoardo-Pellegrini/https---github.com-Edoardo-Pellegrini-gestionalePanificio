@@ -1,6 +1,9 @@
 <nav class="navbar bg-light ">
   <div class="container">
-    <a class="navbar-brand" href="#" [routerLink]="['/admin-dashboard']" routerLinkActive="router-link-active" >
+    <a *ngIf="user.usertype =='ADMIN' " class="navbar-brand" href="#" [routerLink]="['/admin-dashboard']" routerLinkActive="router-link-active" >
+      <img class="img" src="https://image.shutterstock.com/image-vector/retro-bakery-logo-design-vintage-260nw-1264605553.jpg" alt="Bootstrap" width="128" height="128">
+    </a>
+    <a *ngIf="user.usertype =='USER' " class="navbar-brand" href="#" [routerLink]="['/user-dashboard']" routerLinkActive="router-link-active" >
       <img class="img" src="https://image.shutterstock.com/image-vector/retro-bakery-logo-design-vintage-260nw-1264605553.jpg" alt="Bootstrap" width="128" height="128">
     </a>
   </div>

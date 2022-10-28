@@ -1,39 +1,45 @@
-<div id="sfondo">
-  <div class="pop">
-    <table>
+<div class="sfondo">
+  <div class="logop">
+    <img src="https://image.shutterstock.com/image-vector/retro-bakery-logo-design-vintage-260nw-1264605553.jpg" alt="">
+
+  </div>
+  <table class="pop">
+    <tr id="a">
+      <td>
+        <input placeholder="Username" [(ngModel)]="usertoinsert.username" />
+      </td>
+    </tr>
+    <tr><td>
+        <input
+          placeholder="Password"
+          type="password"
+          [(ngModel)]="usertoinsert.password"
+        />
+      </td></tr>
+      <tr><td>
+        <select placeholder="usertype" [(ngModel)]="usertoinsert.usertype">
+          <option value="ADMIN">ADMIN</option>
+          <option value="USER">USER</option>
+        </select>
+      </td></tr>
       
-      <tr id="a">
-        <td>
-          <input placeholder="Username" [(ngModel)]="usertoinsert.username" />
-        </td>
-        <td>
-          <input
-            placeholder="Password"
-            type="password"
-            [(ngModel)]="usertoinsert.password"
-          />
-        </td>
-        <td>
-          <select placeholder="usertype" [(ngModel)]="usertoinsert.usertype">
-            <option value="ADMIN">ADMIN</option>
-            <option value="USER">USER</option>
-          </select>
-        </td>
+      <tr><td>
+        <button (click)="register()">SignIn</button>
+      </td></tr>
+      <tr><td>
+        <button [routerLink]="['/login']"  >Back</button>
+      </td></tr>
       
-        <td>
-          <button (click)="register()">SignIn</button>
-        </td>
-      </tr>
-    </table>
     
-  </div>
-  <div class="pop" *ngIf="x == true">
-    <h2>
-      Registrazione effettuata <br />
-      con successo
-    </h2>
-    <button [routerLink]="['/login']" routerLinkActive="router-link-active">
-      Ok
-    </button>
-  </div>
+  </table>
+
+<div class="pop" *ngIf="x == true">
+  <h2>
+    Registrazione effettuata <br />
+    con successo
+  </h2>
+  <button [routerLink]="['/login']" routerLinkActive="router-link-active">
+    Ok
+  </button>
+</div>
 </div>

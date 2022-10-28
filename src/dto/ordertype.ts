@@ -1,0 +1,10 @@
+export enum OrderType {
+  GIORNALIERO,
+  GIORNI_ALTERNI,
+  LUNEDI,
+  MARTEDI,
+  MERCOLEDI,
+  GIOVEDI,
+  VENERDI,
+  SABATO,
+}
