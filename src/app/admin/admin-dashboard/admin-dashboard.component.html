@@ -1,1 +1,22 @@
-<p>admin dashboard works</p>
+<div class="sfondo">
+  <div class="container-fluid">
+    <h1>Welcome {{ user.username }}</h1>
+    
+    <div class="card" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title">Users</h5>
+        <p class="card-text">Check your customers and their orders.</p>
+        <a href="#" [routerLink]="['users']" class="btn btn-primary"
+          >Let's go</a
+        >
+      </div>
+    </div>
+    <div class="card" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title">Your profile</h5>
+        <p class="card-text">Edit your profile.</p>
+        <a href="#" [routerLink]="['user-data']"class="btn btn-primary">Let's go</a>
+      </div>
+    </div>
+  </div>
+</div>

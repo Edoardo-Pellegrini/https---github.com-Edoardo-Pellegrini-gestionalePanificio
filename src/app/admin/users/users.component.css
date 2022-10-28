@@ -1,0 +1,25 @@
+input{
+    
+     width: 5rem
+}
+th{
+   width: 50%;
+}
+
+#insert{
+   width: 80%;
+   margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+h4{
+   margin-right: 0.5rem;
+}
+.sfondo{
+   position:relative ;
+   bottom: 0px;
+   height: 10vh;
+   background-image: url(https://th.bing.com/th/id/OIP.0-4hrGgeH8zkgfgwjiBdVgD6D6?pid=ImgDet&rs=1);
+}
